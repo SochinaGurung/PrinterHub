@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Sticky Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #111;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Container inside navbar */
+.header-content {
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left (logo) */
+.header-left img {
+  height: 55px;
+  width: auto;
+  cursor: pointer;
+}
+
+/* Right (nav links) */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Links */
+.header-right a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1.5px solid transparent;
+}
+
+.header-right a:hover,
+.header-right a.active {
+  background-color: #fff;
+  color: #111;
+  border: 1.5px solid #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Cart Button */
+.myCart {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.myCart:hover {
+  background-color: #fff;
+  color: #e74c3c;
+  border: 1.5px solid #e74c3c;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.4);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
+  }
+
+  .header-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .myCart {
+    margin-top: 10px;
+  }
+}

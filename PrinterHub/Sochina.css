@@ -1,0 +1,139 @@
+
+#para1{
+
+    font size: 16px;
+    font-family: fantasy;
+    color: darkblue;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url("::{26EE0668-A00A-44D7-9371-BEB064C98683}\1\Fonts\Poppins");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+:root{
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00acf0;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: linear-gradient(
+        to right,
+        rgba(102, 101, 101, 0.75),
+        rgba(8, 83, 156, 0.75)
+        ) ;
+    color: var(--text-color);
+}
+
+.header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+.navbar a:hover, 
+.navbar a:active {
+    color: var(--main-color);
+}
+ section {
+    position: relative;
+    min-height: 0vh;
+    align-items: center ;
+    padding: 10rem 9%;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(126% + 1.3px);
+    height: 108px;
+}*/
+
+.wave .shape-fill {
+    fill: var(--bg-color);
+}
+
+.featured{
+    border: 2px #081b29;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+    padding-bottom: 5rem;
+}
+
+.feat{
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    margin: 9rem;
+   
+}
+ 
+ .content-container {
+    position: relative;
+   
+    display: inline-block;
+  }
+  
+  .content {
+    position: absolute;
+  top: 50%; /* Adjust as needed 
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%); /* Center the text */
+  font-size: 24px; /* Adjust as needed */
+  color: #ffffff; /* Text color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Drop shadow */
+  }
+
+/*footter section*/
+.fotter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 100%;
+    left: 0%;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+.fotter-text p{
+    font-size: 1.6rem;
+    justify-self: center;
+    
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Printer HTML</title>
+        <meta name="author"content="Sochina Gurung">
+        <meta name="description"content="HTML documnet">
+        <meta name="keywords"content="HTML">
+        <link rel="stylesheet" href="CSstyle.css">
+        <script src="JS/popup.js"></script>
+    </head>
+    <style>
+        /*Styling for the slider box*/
+        .slider{
+            width:300px;
+            height:300px;
+            box-sizing:border-box;
+            overflow:hidden;
+            box-shadow: 5px 5px 10px black;
+        }            
+        /*for images inside slider*/
+        img{
+            width:100%;
+            height:100%;
+    
+        }
+        #ul1{
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #para1{
+            font-size: 17px;
+            padding-right:50%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #para2{
+            font-size: 19px;
+            padding-right:20%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .Price{
+            text-decoration: line-through;
+            font-size: 16px;
+        }
+        button{
+            border-color: brown;
+            background-color: rosybrown;
+            color: white;
+            margin: auto;
+            padding: 0%;
+            width: 100px;
+            height: 2x;
+        }
+    </style>
+    <body>
+        <!-- NAVIGATION BAR -->
+        <header class="header">
+            <a href = "#" class ="logo"> TechInnovative.</a> 
+                <nav class="navbar">
+                <a href="Home.html" class ="active">HOME</a>
+                <a href="AboutUs.html">ABOUT US</a>
+                <a href="Reference.html" >REFERENCE</a>
+                <a href="Products.html">PRODUCTS</a>
+                <a href="Blog.html">BLOG</a>
+            </nav>
+       </header>
+
+       <section>
+        <table style="width:80%; margin:auto;"><!--Table to insert images and description side by side-->
+            <tr>
+                <td colspan="2">
+                    <h1 style="text-align: center; font-size:250%">Printer</h1>
+                        <h2 style="font-size:19px;">CANON INKJET PRINTER</h2>
+
+                            <p id="para1"><b>Perfect 4 in 1 Inkjet Printer for home and small business</b></p>
+                            <p id="para2">This high performance multi functional wireless megatank printer makes your business look its best, providing exceptional productivity for small business. They can print, scan, fax and copy wirelessly even through smart devices.</p>
+                    
+                        <ul id="ul1">
+                            <li>Easy maintainance</li>
+                            <li>Ultra High Page Yield Ink Bottles</li>
+                            <li>Highlight & Water Resistant Prints</li>
+                            <li>Straight Paper Path</li>
+                            <li>Full Network Compatibility</li>
+                            <li>Compact, Space Saving Footprint</li>
+                        </ul>
+                
+                </td>
+                <td>
+
+                <div class="slider">
+                    <div id="img">
+                        <img src="C:\Users\mz\Desktop\IS course\Printers\SansungPrinter3.jpg"><!--first image of the slider-->
+                    </div>
+                </div>
+                    <br><figcaption style="font-size: 18px;">SANSUNG MAXIFY GX4070</figcaption>
+                    <div class="Price">
+                        <p>Rs.34,000</p>
+                    </div>
+                    <p style="font-size:16px">SAVE 20% NOW <br> Rs.27,200 <br><button>Add to Cart</button></p>
+                </td>
+            </tr>
+        </table>
+    </section>
+        <!-- SECTION FOOTER -->
+            <fo0ter class="fotter" id="fotter">
+                <a href = "#" class ="logo"> TechInnovative.</a> 
+                <div class="fotter-text">
+                    <p>Copyright &copy; 2024 by Me | All Rights Reserved</p>
+                </div>
+                <script src="CSjs.js"></script>
+            </footer> 
+
+            <script>
+              /*for the popup feature while clicking on add to cart and buy now button*/
+               function addtocart()
+                {
+                alert("Added to cart!!");
+                }
+
+               function Buynow()
+                {
+                alert("Your order is placed.Thank you!!")
+               } 
+
+        </script>             
+    </body>
+    
+</html>

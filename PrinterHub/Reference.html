@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Sochina Gurung">
+  <meta name="description" content="Reference Page">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research</title>
+  <link rel="stylesheet" href="CSstyle.css">
+  <link rel="stylesheet" href="Referense.css">
+</head>
+
+<body>
+  <!-- NAVIGATION BAR -->
+  <header class="header">
+    <a href="#" class="logo">TechInnovative.</a>
+    <nav class="navbar">
+      <a href="Home.html" class="active">HOME</a>
+      <a href="AboutUs.html">ABOUT US</a>
+      <a href="Research.html">REFERENCE</a>
+      <a href="Product.html">PRODUCTS</a>
+      <a href="Blog.html">BLOG</a>
+    </nav>
+  </header>
+
+  <main class="Reference">
+    <h1 style="margin-top: 10%;">REFERENCE PAGE</h1>
+    <p>
+      During the creation of this project, I explored various websites for inspiration and ideas.
+      Below are some of the pages that influenced different sections of our website.
+    </p>
+
+    <section class="webpage">
+      <article class="webpage-first">
+        <h2>Home Page</h2>
+        <a href="https://www.usa.canon.com/">
+          <img src="images/canonpage.png" alt="Canon Home Page" style="width:900px; height:600px;">
+        </a>
+        <p>This website inspired the use of an image slider on our homepage.</p>
+      </article>
+
+      <article class="webpage-second">
+        <h2>Product Page</h2>
+        <a href="https://www.samsung.com/us/">
+          <img src="images/Samsungpage.png" alt="Samsung Product Page" style="width:900px; height:600px;">
+        </a>
+        <p>This layout guided the design of our simple product listing.</p>
+      </article>
+
+      <article class="webpage-third">
+        <h2>About Us Page</h2>
+        <a href="https://xaviercollege.edu.np/team">
+          <img src="images/AboutUspage.png" alt="About Us Page" style="width:900px; height:600px;">
+        </a>
+        <p>Inspired by this layout to present our team and mission clearly.</p>
+      </article>
+
+      <article class="webpage-fourth">
+        <h2>Blog Page</h2>
+        <!-- Add screenshot and link if applicable -->
+      </article>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="main-container">
+      <div class="footer-left">
+        <div class="footer-desc">
+          <h3 class="footer-title">Services</h3>
+          <a class="footer-link" href="#">Maintenance</a>
+          <a class="footer-link" href="#">Buying</a>
+          <a class="footer-link" href="#">Selling</a>
+          <a class="footer-link" href="#">Design</a>
+          <a class="footer-link" href="#">Publication</a>
+        </div>
+
+        <div class="footer-desc">
+          <h3 class="footer-title">Contact Us</h3>
+          <p><img src="images/Instagram_icon.png" alt="Instagram" class="insta"> @TechInnovative</p>
+          <p>@TechInnovative <img src="images/Facebook_icon.webp" alt="Facebook" class="insta"></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <h3 class="footer-title" style="text-align:center;">Your Messages</h3>
+        <form name="myform" onsubmit="return validate()">
+          <label>First Name: <input type="text" name="fname"></label><br>
+          <label>Last Name: <input type="text" name="lname"></label><br>
+          <label>Gender:
+            <input type="radio" name="gender" value="male" checked> Male
+            <input type="radio" name="gender" value="female"> Female
+          </label><br>
+          <label>Message:<br>
+            <textarea name="message" rows="10" cols="30" placeholder="Write your message"></textarea>
+          </label><br>
+          <input type="submit" value="Send Message">
+        </form>
+
+        <script>
+          function validate() {
+            const firstname = document.forms['myform']['fname'].value.trim();
+            const lastname = document.forms['myform']['lname'].value.trim();
+
+            if (!firstname || !lastname) {
+              alert("Empty field found");
+              return false;
+            } else {
+              alert("Thank you for sending feedback");
+              return true;
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

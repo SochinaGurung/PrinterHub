@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About Us</title>
+		<meta name="author"content="Sochina Gurung">
+		<meta name="description"content="AboutUs Page">
+		<meta name="keywords"content="AboutUs">
+		<link rel="stylesheet" href="CSstyle.css">
+        <link rel="stylesheet" href="AboutUsCS.css">
+       <!--<link rel="stylesheet" href="Navbar.css">--> 
+
+
+	</head>
+<body>
+	<!-- NAVIGATION BAR -->
+	<nav>
+	    <header class="header">
+	        
+	        <a href="#"class="logo">TechInnovative</a>
+	        <nav class="navbar">
+	            <a href="Home.html" class ="active">HOME</a>
+	            <a href="AboutUs.html">ABOUT US</a>
+	            <a href="Reference.html" >REFERENCE</a>
+	            <a href="Product.html">PRODUCT</a>
+	            <a href="Blog.html">BLOG</a>
+	        </div>
+	    
+	    </header>
+        <section class="first"><!--For group introduction-->
+        	<h1 style="font-size:23px;" text-align="center">About Us</h1><br><br>
+      			<p id="para1"><img src="images\Picture.jpg">
+        			Team 4 is a group where all the members came together to build a website with whatever we can. This is our <b>official commercial website</b> that we created to sell the <b> latest and highly demanded canon printers</b>.We started this wenpage as our college project to create an e-commerce store that provides authentic and highly demanded inkjet, laser and impact printers.We promise our customers with best quality printers with warranty of maximum years.And our main focus is to provide you with the best printer you can find with the best prices.</p>
+       </section>
+
+        <!--Section for our members profile-->
+        <section>
+		<h1 style="font-size: 30px; text-align: center; color: white;">Our members</h1><br>
+		<table width="100%">
+		 	 <tr>
+		 	 	<!--For Pranav-->
+		  		<th><img src="images/Pranav.jpg">
+		  			<div><h1 style="color: white; font-size:20px;">Pranav Shahi</h1><p style="text-align: center; font-size: 15px;">Age: 18 years <br> Address: Tapahiti, Lalitpur<br><a href="Pranav.html"><button class="button">For More Details</button></a></p></th></div>
+		  		<!--For Sochina-->
+		  		<th><img src="images/Sochina.jpg" >
+		  			<div><h1 style="font-size:20px;">Sochina Gurung</h1><p style="text-align: center; font-size: 15px;">Age:21 years <br>Address: Boudha , Kathmandu <br><a href="Sochina.html"><button class="button">For More Details</button></a></p></th></div>
+		  	</tr>
+		  </table>
+		</section>
+        		        			
+         <!-- SECTION FOOTER -->
+            <footer>
+        <div class="main-container">                           <!--Main container of footer-->
+          <div class="footer-left">                         <!--left side of container-->
+            <div class="footer-desc">                           <!--Footer links-->
+              <h2 class="footer-title">Services</h2>
+              <a class="footer-link" href="#">Maintenance</a>
+              <a class="footer-link" href="#">Buying</a>
+              <a class="footer-link" href="#">Selling</a>
+              <a class="footer-link" href="#">Design</a>
+              <a class="footer-link" href="#">Publication</a>
+            </div>
+
+            <!--For social media handling of TechInnovative-->
+            <div class="footer-desc">
+              <h2 class="footer-title"> Contact Us</h2>
+              <a href="https://www.instagram.com/sochina_gurung/"><img src="images/Instagram_icon.png" class="insta">@Tech Innovative</a><br>
+              <a href="https://www.facebook.com/sochina.gurung.9">@Tech Innovative<img src="images/Facebook_icon.webp" class="insta"></a>
+            </div>
+          </div>
+
+          <div class="footer-right"><!--Right side of container-->
+            <h2 class="footer-title" style="text-align:center;">Your Messages</h2>          <!--Form title-->
+            <form name="myform" onsubmit="validate()">
+                First name:<input type="text"name="fname"><br>
+                Last name:<input type="text"name="lname"><br>
+                gender:<input type = "radio" name="gender"value="male" checked>Male
+                    <input type = "radio" name="gender"value="female" >Female<br>
+                Message:<br>
+                <textarea name="nessage" rows="10" cols="30" placeholder="write message"></textarea>
+                <input type="submit" value="Send Message">
+            </form> 
+
+        <script type="text/javascript">
+            function validate()
+            {
+                var firstname = document.forms['myform'] ['fname'].value;
+                var lastname = document.forms['myform'] ['lname'].value;
+                
+                if(firstname==""|| lastname=="")
+                {
+                    alert("Empty field found"); 
+                }
+                else
+                {
+                    alert("Thank you for sending feedback");
+                }       
+            }
+        </script>
+      </div>
+    </div>
+    </footer>             
+	</body>
+</html>

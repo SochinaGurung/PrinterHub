@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 15px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #00bcd4;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Blog Content Container */
+.Blog {
+  max-width: 1000px;
+  margin: 100px auto 50px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.Blog h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.Blog h1[color="brown"] {
+  color: #a0522d;
+}
+
+.Blog p {
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.Blog img.center {
+  display: block;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 40px 20px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+  flex: 1;
+  min-width: 280px;
+  margin: 10px;
+}
+
+.footer-title {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.insta {
+  width: 20px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+/* Contact Form */
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2ecc71;
+}
+
+/* Bottom Footer */
+.footer-content {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer-content .logo {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer-content p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .Blog {
+    padding: 15px;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    margin-top: 30px;
+  }
+
+  .Blog img.center {
+    width: 100%;
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author"content="Sochina Gurung">
+    <meta name="description"content="Blog Page">
+	<title>Blog </title>
+	<link rel="stylesheet" href="CSstyle.css">
+	<link rel="stylesheet" href="Blog.css">
+</head>
+</style>
+<body>
+       <!-- NAVIGATION BAR -->
+    <header class="header">
+        <a href = "#" class ="logo"> TechInnovative.</a> 
+            <nav class="navbar">
+            <a href="Home.html" class ="active">HOME</a>
+            <a href="AboutUs.html">ABOUT US</a>
+            <a href="Refrence.html" >REFERENCE</a>
+            <a href="Product.html">PRODUCTS</a>
+            <a href="Blog.html">BLOG</a>
+          </nav>
+       </header>
+       <div class="Blog">
+            <h1 style="margin-top: 10%;" >TECHNOLOGY</h1>
+            <p id="para1"><img src="images\Technology image.jpeg" class="center">
+                It is the application of scientific knowledge for practical purposes or applications. Technology uses scientific principles, and applies them to change the environment in which humans live. Technology can also use scientific principles to advance industry or other human constructions.Technology have revolutionized todays day to day life drastically as compared to few years ago. It has brought various benefits as well as many challenges to people's life.<br>   Although people cannot imagine their life without present techology but there are both good and bad side to it.
+            </p>
+
+            <br><h1 style="color: brown;">IMPACT OF TECHNOLOGY ON EDUCATION</h1>
+            <p id="para1"><img src="images\Education.jpg" class="center">
+                AS the figure says itself, technology has made easy learning to the students. It have been giving numerous learning opportunities and chance to show their talents and give them the necessary means to learn.Technology continues to develop at a rapid pace and access to technologies such as mobile phones, laptops and the internet is growing. In schools all arount the globe almost every student have access to the tablets, phones, computers as their part of learning. <br>
+                <br>
+                 But the technology not only have positive side to the education but it also have some negative aspects to it. Students who have full access to technology become too dependent on the them for their every problem. So they can't fully grow their minds to their full capability.  
+            </p>
+            <br>
+            <br><h1 style="color: brown;">IMPACT OF TECHNOLOGY ON BUSINESS</h1>
+            <p id="para1"><img src="images\business.jpg" class="center">
+                Technology has a massive impact on business these days and with addition of internet to that it plays a huge role on the businesss. Every business, either small or big depends on internet and e-commerce website these days as they can bigger platforms and more customers to reach. And people can shop almost every necessary things being at one place. With the use of technology working have been done more remotely nowadays. <br> However, there are also some disadvantages like people are more bounds to be dependent on technologies. And due to increasing ecommerce platform other street shop can go close. There can be risk of security and frauds. And most importantly, there is risk of job cuts.
+                <br>     
+            </p>
+            <br>
+            <br><h1 style="color: brown;">IMPACT OF TECHNOLOGY ON HEALTH</h1>
+            <p id="para1"><img src="images\Technologyhealth.webp" class="center">
+                Although technology have been a biggest blessing to people, but still technology is more disadvantageous than advantageous if not used properlu. In many cases technology seems to be reason for degrading health of a person. With technologies like social media people can communicate all over the world but still there are cases where people face depression, as they get cooped in one place without getting out. There are even cases where children suffer from autism due to excesive use of phone. <br>     
+
+                <br> Overall there are both disadvantages and advantages to people due to upgrowing technologies. Sometimes it can be a blessing and sometimes it can be a curse to people too. But if we learn to use technologies properly and use to learn it in moderation and not overuse it, it can always be advantageous in my opinion.
+            </p>
+            <br>
+        </div>
+            <footer>
+        <div class="main-container">                           <!--Main container of footer-->
+          <div class="footer-left">                         <!--left side of container-->
+            <div class="footer-desc">                           <!--Footer links-->
+              <h2 class="footer-title">Services</h2>
+              <a class="footer-link" href="#">Maintenance</a>
+              <a class="footer-link" href="#">Buying</a>
+              <a class="footer-link" href="#">Selling</a>
+              <a class="footer-link" href="#">Design</a>
+              <a class="footer-link" href="#">Publication</a>
+            </div>
+
+            <!--For social media handling of TechInnovative-->
+            <div class="footer-desc">
+              <h2 class="footer-title"> Contact Us</h2>
+              <a ><img src="images/Instagram_icon.png" class="insta">@Tech Innovative</a><br>
+              <a >@Tech Innovative<img src="images/Facebook_icon.webp" class="insta"></a>
+            </div>
+          </div>
+
+          <div class="footer-right"><!--Right side of container-->
+            <h2 class="footer-title" style="text-align:center;">Your Messages</h2>          <!--Form title-->
+            <form name="myform" onsubmit="validate()">
+                First name:<input type="text"name="fname"><br>
+                Last name:<input type="text"name="lname"><br>
+                gender:<input type = "radio" name="gender"value="male" checked>Male
+                    <input type = "radio" name="gender"value="female" >Female<br>
+                Message:<br>
+                <textarea name="nessage" rows="10" cols="30" placeholder="write message"></textarea>
+                <input type="submit" value="Send Message">
+            </form> 
+
+        <script type="text/javascript">
+            function validate()
+            {
+                var firstname = document.forms['myform'] ['fname'].value;
+                var lastname = document.forms['myform'] ['lname'].value;
+                
+                if(firstname==""|| lastname=="")
+                {
+                    alert("Empty field found"); 
+                }
+                else
+                {
+                    alert("Thank you for sending feedback");
+                }
+                    
+            }
+        </script>
+      </div>
+    </div>
+    </footer>             
+
+         <!-- SECTION FOOTER -->
+        <footer class="footer-content">
+            <a href = "#" class ="logo"> TechInnovative.</a> 
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Me | All Rights Reserved</p>
+            </div>
+            <script src="CSjs.js"></script>
+
+        </footer>
+    
+    </body>
+</html>
+
+

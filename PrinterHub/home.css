@@ -1,0 +1,179 @@
+/*Styling for the slider box*/
+    .slider{
+        width:700px;
+        height:380px;
+        box-sizing:border-box;
+        overflow:hidden;
+        box-shadow: 5px 5px 10px black;
+    }            
+    /*for images inside slider*/
+    img{
+        width:100%;
+        height:100%;
+    }
+    .Para{
+    	height: 390px;
+        width: 390px;
+    	box-shadow: 2px px 0px black;
+    }
+    .Message{
+        flex-direction: column;
+    	width: 80%;
+        text-align: left;
+    	margin-left:10px ;
+    	justify-content: center;
+        color: white;
+        font-size: 30px;
+    }
+    .Message p {
+       margin-top: -20px;
+       font-size: 20px;
+       text-align: right;
+    }
+    .insta{
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+    }
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00bcd4;
+}
+
+/* Footer styles */
+footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 40px 20px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+  flex: 1;
+  min-width: 280px;
+  margin: 10px;
+}
+
+.footer-title {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.insta {
+  width: 20px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+/* Contact Form */
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2ecc71;
+}
+
+/* Bottom Footer */
+.footer-content {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer-content .logo {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer-content p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .Blog {
+    padding: 15px;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    margin-top: 30px;
+  }
+
+  .Blog img.center {
+    width: 100%;
+  }
+}

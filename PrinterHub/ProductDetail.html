@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Detail page">
+  <meta name="keywords" content="Product detail">
+  <meta name="author" content="Sochina">
+  <title>Product Detail</title>
+  <link rel="stylesheet" href="CSstyle.css">
+  <link rel="stylesheet" href="ProductDetail.css">
+
+
+  <script src="../JS/popup.js"></script>
+</head>
+<body>
+      <header class="header">
+        <a href="#" class="logo">TechInnovative.</a>
+        <nav class="navbar">
+            <a href="Home.html" class="active">HOME</a>
+            <a href="AboutUs.html">ABOUT US</a>
+            <a href="Reference.html">REFERENCE</a>
+            <a href="Product.html">PRODUCTS</a>
+            <a href="Blog.html">BLOG</a>
+        </nav>
+    </header>
+
+  <main class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <img src="images/CanonPrinter.png" alt="Canon Printer" height="200" width="200" id="detail1">
+      </div>
+    </div>
+
+    <div class="rightcolumn">
+      <div class="card">
+        <h1 class="product-title">Canon Inkjet Printer</h1>
+        <p class="product-description">
+          Elevate your printing experience with Canon printer.<br>
+          Discover unparalleled quality, vibrant colors, and seamless performance.<br>
+          Explore the world of effortless printing.
+        </p>
+        <p class="product-price">In just: <strong>Rs 20,999.00</strong> <del>Rs 30,000.00</del></p>
+        <label for="quantity">Quantity:</label>
+        <select name="Quantity" id="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <br><br>
+        <button class="effect" onclick="addtocart()">Add to cart</button>
+        <button class="effect" onclick="Buynow()">Buy now</button>
+      </div>
+    </div>
+  </main>
+
+  <section class="related-products">
+    <h2>Related Products</h2>
+    <table>
+      <tr>
+        <td class="hover-element">
+          <a href="product.html">
+            <img src="images/CanonPrinter2.jpeg" alt="Canon Dot Printer">
+            <p>Rs 30,999.00</p>
+            <button>Add to cart</button>
+          </a>
+        </td>
+        <td class="hover-element">
+          <a href="product.html">
+            <img src="images/SansungPrinter3.jpg" alt="Epson Dot Printer">
+            <p>Rs 29,999 <del>Rs 30,999.00</del></p>
+            <button>Add to cart</button>
+          </a>
+        </td>
+        <td class="hover-element">
+          <a href="product.html">
+            <img src="images/HPprinter.jpg" alt="HP Dot Printer">
+            <p>Rs 25,000 <del>Rs 26,999.00</del></p>
+            <button>Add to cart</button>
+          </a>
+        </td>
+        <td class="hover-element">
+          <a href="product.html">
+            <img src="images/EpsonPrinter.webp" alt="Samsung Inkjet">
+            <p>Rs 33,999 <del>Rs 35,999.00</del></p>
+            <button>Add to cart</button>
+          </a>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <div class="footer-desc">
+          <h2>About</h2>
+          <a class="footer-link" href="#">Terms and Policies</a>
+          <a class="footer-link" href="#">Careers</a>
+          <a class="footer-link" href="#">Investors</a>
+          <a class="footer-link" href="#">Sellers License</a>
+          <a class="footer-link" href="#">Legal Imprint</a>
+        </div>
+        <div class="footer-desc">
+          <h2>Help</h2>
+          <a class="footer-link" href="#">Products Supply</a>
+          <a class="footer-link" href="#">Gift Cards</a>
+          <a class="footer-link" href="#">Payments</a>
+          <a class="footer-link" href="#">Location</a>
+        </div>
+        <div class="footer-desc">
+          <h2>Socials</h2>
+          <a class="footer-social" href="#">printer shop.69</a>
+          <a class="footer-social" href="#">@printer_shop101</a>
+          <a class="footer-social" href="#">@printer.shop69</a>
+          <a class="footer-social" href="#">printer_shop101</a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <h2 class="footer-header">Feedback</h2>
+        <form name="feedback">
+          <label>Name</label><br>
+          <input name="fname" type="text" placeholder="First Name">
+          <input name="lname" type="text" placeholder="Last Name"><br>
+          <label>Contact</label><br>
+          <input name="email" type="text" placeholder="Email">
+          <input name="phone" type="number" placeholder="Phone Number"><br>
+          <label>Message</label><br>
+          <input name="text" placeholder="Comment"><br>
+          <button type="button" onclick="validateform()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <div class="popup" id="alert">
+    <div class="popup-text">
+      <div class="popup-upper">
+        <h1 id="popup-header">Text</h1>
+        <button onclick="closepopup()">X</button>
+      </div>
+      <p id="popup-desc">Text</p>
+    </div>
+  </div>
+
+  <script>
+    function addtocart() {
+      alert("Added to cart!!");
+    }
+
+    function Buynow() {
+      alert("Your order is placed. Thank you!!");
+    }
+
+    function validateform() {
+      var fname = document.forms['feedback']['fname'].value;
+      var lname = document.forms['feedback']['lname'].value;
+      var phone = document.forms['feedback']['phone'].value;
+      var mail = document.forms['feedback']['email'].value;
+      var msg = document.forms['feedback']['text'].value;
+      if (!fname || !lname || !phone || !mail || !msg) {
+        popup("Error!", "Empty Fields were detected!");
+      } else {
+        popup("Notice", "Thank you for your feedback!");
+      }
+    }
+  </script>
+</body>
+</html>

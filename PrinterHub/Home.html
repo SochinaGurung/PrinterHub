@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author"content="Sochina Gurung">
+    <meta name="description"content="HTML documnet">
+    <meta name="keywords"content="HTML">
+    <link rel="stylesheet" href="CSstyle.css">
+    <link rel="stylesheet" href="home.css">
+
+</head>
+
+    <body>
+        <!-- NAVIGATION BAR -->
+        <header class="header">
+            <a href = "#" class ="logo"> TechInnovative.</a> 
+                <nav class="navbar">
+                <a href="Home.html" class ="active">HOME</a>
+                <a href="AboutUs.html">ABOUT US</a>
+                <a href="Reference.html" >REFERENCE</a>
+                <a href="Product.html">PRODUCTS</a>
+                <a href="Blog.html">BLOG</a>
+            </nav>
+       </header>
+       <div>
+           <h1 style="margin-top: 10%;">HOME PAGE</h1>
+       </div>
+
+       <section>
+        <table style="width:80%; margin:auto;"><!--Table to insert images and description side by side-->
+            <tr>
+                <td colspan="2">
+                	<div class="Para">
+                		<div class="Message">
+                            <h1> WELCOME TO OUR PRINTER STORE</h1>
+                            <h4>Something for everyone <br> from where you cannot <br>go empty handed</h4>
+                	    </div>
+                    </div>
+                </td>
+                <td>
+
+                <div class="slider">
+                    <div id="img">
+                        <img src="Printer4.webp"><!--first image of the slider-->
+                    </div>
+                </div>
+              </td>
+            </tr>
+        </table>
+    </section>
+<!-- SECTION FOOTER -->
+    <footer>
+        <div class="main-container">                           <!--Main container of footer-->
+          <div class="footer-left">                         <!--left side of container-->
+            <div class="footer-desc">                           <!--Footer links-->
+              <h2 class="footer-title">Services</h2>
+              <a class="footer-link" href="#">Maintenance</a>
+              <a class="footer-link" href="#">Buying</a>
+              <a class="footer-link" href="#">Selling</a>
+              <a class="footer-link" href="#">Design</a>
+              <a class="footer-link" href="#">Publication</a>
+            </div>
+
+            <!--For social media handling of TechInnovative-->
+            <div class="footer-desc">
+              <h2 class="footer-title"> Contact Us</h2>
+              <a ><img src="images\Instagram_icon.png" class="insta">@Tech Innovative</a><br>
+              <a >@Tech Innovative<img src="images\Facebook_icon.webp" class="insta"></a>
+            </div>
+          </div>
+
+          <div class="footer-right"><!--Right side of container-->
+            <h2 class="footer-title" style="text-align:center;">Your Messages</h2>          <!--Form title-->
+            <form name="myform" onsubmit="validate()">
+                First name:<input type="text"name="fname"><br>
+                Last name:<input type="text"name="lname"><br>
+                gender:<input type = "radio" name="gender"value="male" checked>Male
+                    <input type = "radio" name="gender"value="female" >Female<br>
+                Message:<br>
+                <textarea name="nessage" rows="10" cols="30" placeholder="write message"></textarea>
+                <input type="submit" value="Send Message">
+            </form> 
+
+        <script type="text/javascript">
+            function validate()
+            {
+                var firstname = document.forms['myform'] ['fname'].value;
+                var lastname = document.forms['myform'] ['lname'].value;
+                
+                if(firstname==""|| lastname=="")
+                {
+                    alert("Empty field found"); 
+                }
+                else
+                {
+                    alert("Thank you for sending feedback");
+                }
+                    
+            }
+        </script>
+      </div>
+    </div>
+    </footer>             
+    
+    <script>
+        //For slider//
+        var images=["Printer5.png","Printer3.webp","Printer1.png","Printer4.webp","Printer2.jpg"];
+        var x=0;
+        var img=document.getElementById("img");
+        setInterval(slider,3000);
+
+        function slider()
+        {
+            if(x<images.length)
+            {
+                x=x+1;
+            }
+            else{
+                x=1;
+            }
+            img.innerHTML="<img src="+images[x-1]+">";
+        }
+        
+    </script>
+    <!-- SECTION FOOTER -->
+        <footer class="footer-content">
+            <a href = "#" class ="logo"> TechInnovative.</a> 
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Me | All Rights Reserved</p>
+            </div>
+            <script src="CSjs.js"></script>
+
+        </footer>
+    </body>
+</html>
